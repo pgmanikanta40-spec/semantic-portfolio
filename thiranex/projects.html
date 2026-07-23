@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Manikanta Accessible Portfolio</title>
+    <meta name="description" content="Explore accessible front-end projects by Manikanta, including component systems, WCAG audits, and semantic portfolio builds.">
+    <meta name="author" content="Manikanta">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f1720">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Manikanta Projects">
+    <meta property="og:description" content="Accessible front-end work spanning semantic HTML, design systems, and WCAG remediation.">
+    <meta property="og:url" content="https://example.com/projects.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Manikanta Projects">
+    <meta name="twitter:description" content="Accessible front-end work spanning semantic HTML, design systems, and WCAG remediation.">
+    <link rel="canonical" href="https://example.com/projects.html">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Manikanta home">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Manikanta</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="page-header" aria-labelledby="projects-title">
+        <div class="container narrow">
+          <p class="eyebrow">Projects</p>
+          <h1 id="projects-title">Accessible interfaces with measurable outcomes.</h1>
+          <p class="lead">Selected work demonstrating semantic markup, WCAG remediation, inclusive components, and clear content architecture.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="project-list-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Case Studies</p>
+            <h2 id="project-list-title">Selected work</h2>
+          </div>
+
+          <div class="project-list">
+            <article id="component-library" class="project-feature" aria-labelledby="component-library-title">
+              <div>
+                <p class="project-meta">Design System</p>
+                <h3 id="component-library-title">Accessible component library</h3>
+                <p>Created semantic foundations for buttons, links, form fields, alerts, cards, and navigation components.</p>
+              </div>
+              <ul class="check-list" aria-label="Component library accessibility details">
+                <li>Native HTML controls before custom ARIA patterns</li>
+                <li>Visible focus states and keyboard interaction notes</li>
+                <li>Color contrast tokens tested against WCAG AA</li>
+              </ul>
+            </article>
+
+            <article id="audit-roadmap" class="project-feature" aria-labelledby="audit-roadmap-title">
+              <div>
+                <p class="project-meta">Accessibility Audit</p>
+                <h3 id="audit-roadmap-title">WCAG remediation roadmap</h3>
+                <p>Reviewed a product workflow and grouped accessibility issues by impact, effort, and affected user task.</p>
+              </div>
+              <ul class="check-list" aria-label="Audit roadmap accessibility details">
+                <li>Heading hierarchy and landmark structure fixes</li>
+                <li>Form labels, instructions, and error messaging</li>
+                <li>Screen reader notes for dynamic status updates</li>
+              </ul>
+            </article>
+
+            <article id="portfolio-build" class="project-feature" aria-labelledby="portfolio-build-title">
+              <div>
+                <p class="project-meta">Static Site</p>
+                <h3 id="portfolio-build-title">Semantic portfolio build</h3>
+                <p>Delivered a multi-page portfolio skeleton with optimized metadata, accessible navigation, and lightweight styling.</p>
+              </div>
+              <ul class="check-list" aria-label="Portfolio build accessibility details">
+                <li>Unique titles and descriptions for every page</li>
+                <li>Skip links, page landmarks, and current-page states</li>
+                <li>Responsive layout without dependency-heavy scripts</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="methods-title">
+        <div class="container two-column">
+          <div>
+            <p class="eyebrow">Methods</p>
+            <h2 id="methods-title">What each project includes</h2>
+          </div>
+
+          <ul class="tag-list" aria-label="Project methods">
+            <li>HTML validation</li>
+            <li>Keyboard testing</li>
+            <li>Screen reader review</li>
+            <li>SEO metadata</li>
+            <li>Responsive QA</li>
+            <li>Contrast checks</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Manikanta. Built with semantic HTML5.</p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

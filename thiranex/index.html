@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manikanta | Accessible Front-End Developer Portfolio</title>
+    <meta name="description" content="Portfolio for Manikanta, a front-end developer creating inclusive, semantic, and high-performing web experiences.">
+    <meta name="author" content="Manikanta">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f1720">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Manikanta | Accessible Front-End Developer">
+    <meta property="og:description" content="Inclusive portfolio showcasing semantic HTML, accessibility strategy, and thoughtful front-end development.">
+    <meta property="og:url" content="https://example.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Manikanta | Accessible Front-End Developer">
+    <meta name="twitter:description" content="Semantic, accessible portfolio for an inclusive front-end developer.">
+    <link rel="canonical" href="https://example.com/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Manikanta",
+        "jobTitle": "Accessible Front-End Developer",
+        "url": "https://example.com/",
+        "sameAs": [
+          "https://www.linkedin.com/",
+          "https://github.com/"
+        ],
+        "knowsAbout": [
+          "Semantic HTML",
+          "WCAG accessibility",
+          "Front-end development",
+          "Design systems"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Manikanta home">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Manikanta</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="home-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Semantic HTML5 Portfolio</p>
+            <h1 id="home-title">Accessible web experiences built with clarity.</h1>
+            <p class="lead">I design and build interfaces that are easy to navigate, resilient across devices, and friendly to assistive technology.</p>
+            <ul class="action-list" aria-label="Featured actions">
+              <li><a class="button" href="projects.html">View Projects</a></li>
+              <li><a class="button button-secondary" href="contact.html">Start a Conversation</a></li>
+            </ul>
+          </div>
+
+          <figure class="portrait-figure">
+            <img src="assets/profile-placeholder.svg" width="480" height="480" alt="Abstract profile illustration representing Manikanta">
+            <figcaption>Inclusive front-end design, development, and accessibility audits.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="featured-work-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Featured Work</p>
+            <h2 id="featured-work-title">Recent projects</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="project-card" aria-labelledby="project-system-title">
+              <p class="project-meta">Design System</p>
+              <h3 id="project-system-title">Accessible component library</h3>
+              <p>Reusable UI patterns with keyboard support, visible focus states, and documented ARIA guidance.</p>
+              <a href="projects.html#component-library">Read about the component library</a>
+            </article>
+
+            <article class="project-card" aria-labelledby="project-audit-title">
+              <p class="project-meta">Accessibility Audit</p>
+              <h3 id="project-audit-title">WCAG remediation roadmap</h3>
+              <p>Prioritized fixes for form labels, heading order, contrast, landmark structure, and content clarity.</p>
+              <a href="projects.html#audit-roadmap">Read about the audit roadmap</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="skills-title">
+        <div class="container two-column">
+          <div>
+            <p class="eyebrow">Core Skills</p>
+            <h2 id="skills-title">Built for people first</h2>
+            <p>Every project starts with semantic structure, readable content, reliable navigation, and inclusive interaction states.</p>
+          </div>
+
+          <ul class="tag-list" aria-label="Portfolio skills">
+            <li>Semantic HTML</li>
+            <li>WCAG 2.2</li>
+            <li>ARIA patterns</li>
+            <li>Responsive CSS</li>
+            <li>Performance</li>
+            <li>SEO foundations</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="availability" aria-labelledby="availability-title">
+        <div class="container availability-inner">
+          <div>
+            <h2 id="availability-title">Available for accessible product work</h2>
+            <p>Partner on audits, portfolio builds, front-end implementation, and design system accessibility.</p>
+          </div>
+          <a class="button" href="contact.html">Contact Manikanta</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Manikanta. Built with semantic HTML5.</p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

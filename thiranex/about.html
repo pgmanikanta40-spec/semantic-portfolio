@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Manikanta | Accessible Front-End Developer</title>
+    <meta name="description" content="Learn about Manikanta's accessible front-end development approach, values, process, and inclusive web design background.">
+    <meta name="author" content="Manikanta">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f1720">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="About Manikanta">
+    <meta property="og:description" content="Accessible front-end developer focused on semantic HTML, inclusive UI, and resilient web experiences.">
+    <meta property="og:url" content="https://example.com/about.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About Manikanta">
+    <meta name="twitter:description" content="Accessible front-end developer focused on semantic HTML and inclusive UI.">
+    <link rel="canonical" href="https://example.com/about.html">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Manikanta home">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Manikanta</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="page-header" aria-labelledby="about-title">
+        <div class="container narrow">
+          <p class="eyebrow">About</p>
+          <h1 id="about-title">Designing durable interfaces for real people.</h1>
+          <p class="lead">My work combines front-end engineering, accessibility reviews, and content structure so digital products are easier to understand and use.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="principles-title">
+        <div class="container two-column">
+          <div>
+            <p class="eyebrow">Principles</p>
+            <h2 id="principles-title">How I approach the web</h2>
+          </div>
+
+          <div class="stack">
+            <article aria-labelledby="principle-structure-title">
+              <h3 id="principle-structure-title">Start with structure</h3>
+              <p>Clear headings, landmarks, lists, and form labels make pages easier to scan visually and easier to navigate with assistive technology.</p>
+            </article>
+
+            <article aria-labelledby="principle-interaction-title">
+              <h3 id="principle-interaction-title">Respect every input method</h3>
+              <p>Keyboard, touch, mouse, voice, and screen reader users should all be able to move through the same content without hidden traps.</p>
+            </article>
+
+            <article aria-labelledby="principle-performance-title">
+              <h3 id="principle-performance-title">Keep pages resilient</h3>
+              <p>Fast-loading markup, native controls, and progressive enhancement help sites remain useful across devices and connection speeds.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">Focused accessibility practice</h2>
+          </div>
+
+          <ol class="timeline" aria-label="Professional experience highlights">
+            <li>
+              <h3>Front-end accessibility consultant</h3>
+              <p>Audited product flows against WCAG, documented issues, and paired with engineers on semantic fixes.</p>
+            </li>
+            <li>
+              <h3>Design system contributor</h3>
+              <p>Built reusable components with keyboard behavior, focus management, and inclusive content guidance.</p>
+            </li>
+            <li>
+              <h3>Product interface developer</h3>
+              <p>Delivered responsive web pages with maintainable CSS, accessible forms, and SEO-friendly markup.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <aside class="quote-panel" aria-labelledby="working-style-title">
+        <div class="container narrow">
+          <h2 id="working-style-title">Working style</h2>
+          <p>I like practical accessibility: specific issues, clear fixes, and implementation details that teams can actually maintain.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Manikanta. Built with semantic HTML5.</p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
