@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Manikanta | B.Tech CSE (DSAI) Student</title>
+    <meta name="description" content="Contact Manikanta, a B.Tech CSE (DSAI) student and aspiring front-end developer from Anantapur, Andhra Pradesh, India.">
+    <meta name="author" content="Manikanta">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f1720">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Manikanta | B.Tech CSE (DSAI) Student">
+    <meta property="og:description" content="Contact Manikanta about student projects, front-end development, internships, and collaboration opportunities.">
+    <meta property="og:url" content="https://pgmanikanta40-spec.github.io/thiranex/contact.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Manikanta | B.Tech CSE (DSAI) Student">
+    <meta name="twitter:description" content="Contact Manikanta about student projects, internships, and front-end development.">
+    <link rel="canonical" href="https://pgmanikanta40-spec.github.io/thiranex/contact.html">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/theme.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Manikanta home">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Manikanta</span>
+        </a>
+
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme" data-theme-toggle>
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span data-theme-toggle-label>Dark</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="page-header" aria-labelledby="contact-title">
+        <div class="container narrow">
+          <p class="eyebrow">Contact</p>
+          <h1 id="contact-title">Tell me what you are building.</h1>
+          <p id="contact-intro" class="lead">Use the form to share project ideas, internship opportunities, collaboration details, and the best way to reply.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-form-title">
+        <div class="container contact-layout">
+          <!-- TODO: Add Manikanta's email address to this mailto action when available. -->
+          <form class="contact-form" action="mailto:pgmanikanta40@gmail.com" method="post" enctype="text/plain" aria-labelledby="contact-form-title" aria-describedby="contact-form-help contact-intro">
+            <div class="form-heading">
+              <p class="eyebrow">Message</p>
+              <h2 id="contact-form-title">Send a message</h2>
+              <p id="contact-form-help">Fields marked with an asterisk are required.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-hint">
+              <p id="name-hint" class="field-hint">Use the name you would like in the reply.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-hint">
+              <p id="email-hint" class="field-hint">Enter a valid email address where I can reply.</p>
+            </div>
+
+            <fieldset>
+              <legend>Project type</legend>
+              <div class="choice-group">
+                <div class="choice-item">
+                  <input id="type-audit" name="project_type" type="radio" value="student-project">
+                  <label for="type-audit">Student project</label>
+                </div>
+                <div class="choice-item">
+                  <input id="type-build" name="project_type" type="radio" value="frontend-build">
+                  <label for="type-build">Front-end build</label>
+                </div>
+                <div class="choice-item">
+                  <input id="type-system" name="project_type" type="radio" value="internship-opportunity">
+                  <label for="type-system">Internship opportunity</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="timeline">Timeline</label>
+              <select id="timeline" name="timeline" autocomplete="off" aria-describedby="timeline-hint">
+                <option value="">Select a timeline</option>
+                <option value="this-month">This month</option>
+                <option value="one-to-three-months">1 to 3 months</option>
+                <option value="planning">Planning ahead</option>
+              </select>
+              <p id="timeline-hint" class="field-hint">Choose the closest planning window.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Project details <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="7" minlength="20" required aria-describedby="message-hint"></textarea>
+              <p id="message-hint" class="field-hint">Include goals, project context, internship details, or important dates.</p>
+            </div>
+
+            <div class="choice-item consent">
+              <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-hint">
+              <label for="consent">I agree to be contacted about this message <span aria-hidden="true">*</span></label>
+            </div>
+            <p id="consent-hint" class="field-hint">Your information is used only to reply to your inquiry.</p>
+
+            <button class="button" type="submit">Send Message</button>
+            <p id="form-status" class="sr-only" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-aside" aria-labelledby="contact-details-title">
+            <h2 id="contact-details-title">Contact details</h2>
+            <address>
+              <p>Email: To be provided later</p>
+              <p>Location: Anantapur, Andhra Pradesh, India</p>
+            </address>
+            <p>Typical response time is two business days.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Manikanta. Built with semantic HTML5.</p>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
