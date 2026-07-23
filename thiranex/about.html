@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Manikanta | Accessible Front-End Developer</title>
-    <meta name="description" content="Learn about Manikanta's accessible front-end development approach, values, process, and inclusive web design background.">
+    <title>About Manikanta | B.Tech CSE (DSAI) Student</title>
+    <meta name="description" content="Learn about Manikanta, a B.Tech CSE (DSAI) student building front-end web projects, academic applications, and accessible portfolio experiences.">
     <meta name="author" content="Manikanta">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0f1720">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="About Manikanta">
-    <meta property="og:description" content="Accessible front-end developer focused on semantic HTML, inclusive UI, and resilient web experiences.">
-    <meta property="og:url" content="https://example.com/about.html">
+    <meta property="og:title" content="About Manikanta | B.Tech CSE (DSAI) Student">
+    <meta property="og:description" content="Student portfolio profile for a B.Tech CSE (DSAI) student and aspiring front-end web developer.">
+    <meta property="og:url" content="https://pgmanikanta40-spec.github.io/thiranex/about.html">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="About Manikanta">
-    <meta name="twitter:description" content="Accessible front-end developer focused on semantic HTML and inclusive UI.">
-    <link rel="canonical" href="https://example.com/about.html">
+    <meta name="twitter:title" content="About Manikanta | B.Tech CSE (DSAI) Student">
+    <meta name="twitter:description" content="B.Tech CSE (DSAI) student focused on front-end web development and academic projects.">
+    <link rel="canonical" href="https://pgmanikanta40-spec.github.io/thiranex/about.html">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/theme.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -29,14 +30,21 @@
           <span>Manikanta</span>
         </a>
 
-        <nav class="site-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" aria-current="page">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html" aria-current="page">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme" data-theme-toggle>
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span data-theme-toggle-label>Dark</span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -44,56 +52,60 @@
       <section class="page-header" aria-labelledby="about-title">
         <div class="container narrow">
           <p class="eyebrow">About</p>
-          <h1 id="about-title">Designing durable interfaces for real people.</h1>
-          <p class="lead">My work combines front-end engineering, accessibility reviews, and content structure so digital products are easier to understand and use.</p>
+          <h1 id="about-title">A student portfolio shaped by curiosity and practice.</h1>
+          <p class="lead">I am a B.Tech CSE (DSAI) student from Anantapur, Andhra Pradesh, India, building front-end web projects while exploring data science, AI, and accessible user experiences.</p>
         </div>
       </section>
 
       <section class="section" aria-labelledby="principles-title">
         <div class="container two-column">
           <div>
-            <p class="eyebrow">Principles</p>
-            <h2 id="principles-title">How I approach the web</h2>
+            <p class="eyebrow">Student Focus</p>
+            <h2 id="principles-title">How I approach learning</h2>
           </div>
 
           <div class="stack">
             <article aria-labelledby="principle-structure-title">
               <h3 id="principle-structure-title">Start with structure</h3>
-              <p>Clear headings, landmarks, lists, and form labels make pages easier to scan visually and easier to navigate with assistive technology.</p>
+              <p>I use semantic HTML, clear headings, and labeled forms because strong structure makes every project easier to understand, maintain, and improve.</p>
             </article>
 
             <article aria-labelledby="principle-interaction-title">
-              <h3 id="principle-interaction-title">Respect every input method</h3>
-              <p>Keyboard, touch, mouse, voice, and screen reader users should all be able to move through the same content without hidden traps.</p>
+              <h3 id="principle-interaction-title">Practice accessible interaction</h3>
+              <p>I test navigation, focus states, form controls, and responsive layouts so my projects work for keyboard users and different device sizes.</p>
             </article>
 
             <article aria-labelledby="principle-performance-title">
-              <h3 id="principle-performance-title">Keep pages resilient</h3>
-              <p>Fast-loading markup, native controls, and progressive enhancement help sites remain useful across devices and connection speeds.</p>
+              <h3 id="principle-performance-title">Build project by project</h3>
+              <p>Each academic or personal project helps me strengthen problem solving, UI implementation, debugging, and real-world development habits.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-muted" aria-labelledby="experience-title">
+      <section class="section section-muted" aria-labelledby="student-profile-title">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2 id="experience-title">Focused accessibility practice</h2>
+            <p class="eyebrow">Profile</p>
+            <h2 id="student-profile-title">Student portfolio highlights</h2>
           </div>
 
-          <ol class="timeline" aria-label="Professional experience highlights">
+          <ol class="timeline" aria-label="Student portfolio highlights">
             <li>
-              <h3>Front-end accessibility consultant</h3>
-              <p>Audited product flows against WCAG, documented issues, and paired with engineers on semantic fixes.</p>
+              <h3>Education</h3>
+              <p>Pursuing B.Tech in Computer Science Engineering with a Data Science and Artificial Intelligence specialization.</p>
             </li>
             <li>
-              <h3>Design system contributor</h3>
-              <p>Built reusable components with keyboard behavior, focus management, and inclusive content guidance.</p>
+              <h3>Skills</h3>
+              <p>HTML5, CSS3, JavaScript basics, responsive design, accessibility fundamentals, Python, and project documentation.</p>
             </li>
             <li>
-              <h3>Product interface developer</h3>
-              <p>Delivered responsive web pages with maintainable CSS, accessible forms, and SEO-friendly markup.</p>
+              <h3>Academic Projects</h3>
+              <p>Building projects such as Memory Master, ResumeMatch AI, Living Structures Website, and this accessible portfolio.</p>
+            </li>
+            <li>
+              <h3>Internship Goals</h3>
+              <p>Seeking opportunities to learn from real teams, contribute to front-end features, and grow through practical engineering work.</p>
             </li>
           </ol>
         </div>
@@ -102,7 +114,7 @@
       <aside class="quote-panel" aria-labelledby="working-style-title">
         <div class="container narrow">
           <h2 id="working-style-title">Working style</h2>
-          <p>I like practical accessibility: specific issues, clear fixes, and implementation details that teams can actually maintain.</p>
+          <p>I learn best by building, testing, improving, and turning feedback into clearer code and stronger user experiences.</p>
         </div>
       </aside>
     </main>

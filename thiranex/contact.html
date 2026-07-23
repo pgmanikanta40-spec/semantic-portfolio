@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Manikanta | Accessible Front-End Developer</title>
-    <meta name="description" content="Contact Manikanta for accessible front-end development, WCAG audits, semantic HTML builds, and inclusive design system support.">
+    <title>Contact Manikanta | B.Tech CSE (DSAI) Student</title>
+    <meta name="description" content="Contact Manikanta, a B.Tech CSE (DSAI) student and aspiring front-end developer from Anantapur, Andhra Pradesh, India.">
     <meta name="author" content="Manikanta">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0f1720">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Contact Manikanta">
-    <meta property="og:description" content="Start a conversation about accessible front-end development, WCAG audits, and semantic portfolio builds.">
-    <meta property="og:url" content="https://example.com/contact.html">
+    <meta property="og:title" content="Contact Manikanta | B.Tech CSE (DSAI) Student">
+    <meta property="og:description" content="Contact Manikanta about student projects, front-end development, internships, and collaboration opportunities.">
+    <meta property="og:url" content="https://pgmanikanta40-spec.github.io/thiranex/contact.html">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Contact Manikanta">
-    <meta name="twitter:description" content="Start a conversation about accessible front-end development.">
-    <link rel="canonical" href="https://example.com/contact.html">
+    <meta name="twitter:title" content="Contact Manikanta | B.Tech CSE (DSAI) Student">
+    <meta name="twitter:description" content="Contact Manikanta about student projects, internships, and front-end development.">
+    <link rel="canonical" href="https://pgmanikanta40-spec.github.io/thiranex/contact.html">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/theme.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -29,14 +30,21 @@
           <span>Manikanta</span>
         </a>
 
-        <nav class="site-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" aria-current="page">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+          </nav>
+
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme" data-theme-toggle>
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span data-theme-toggle-label>Dark</span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -45,13 +53,14 @@
         <div class="container narrow">
           <p class="eyebrow">Contact</p>
           <h1 id="contact-title">Tell me what you are building.</h1>
-          <p id="contact-intro" class="lead">Use the form to share project goals, accessibility needs, timeline, and the best way to reply.</p>
+          <p id="contact-intro" class="lead">Use the form to share project ideas, internship opportunities, collaboration details, and the best way to reply.</p>
         </div>
       </section>
 
       <section class="section" aria-labelledby="contact-form-title">
         <div class="container contact-layout">
-          <form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain" aria-labelledby="contact-form-title" aria-describedby="contact-form-help contact-intro">
+          <!-- TODO: Add Manikanta's email address to this mailto action when available. -->
+          <form class="contact-form" action="mailto:pgmanikanta40@gmail.com" method="post" enctype="text/plain" aria-labelledby="contact-form-title" aria-describedby="contact-form-help contact-intro">
             <div class="form-heading">
               <p class="eyebrow">Message</p>
               <h2 id="contact-form-title">Send a message</h2>
@@ -67,23 +76,23 @@
             <div class="form-field">
               <label for="email">Email <span aria-hidden="true">*</span></label>
               <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-hint">
-              <p id="email-hint" class="field-hint">Enter a valid email address, such as name@example.com.</p>
+              <p id="email-hint" class="field-hint">Enter a valid email address where I can reply.</p>
             </div>
 
             <fieldset>
               <legend>Project type</legend>
               <div class="choice-group">
                 <div class="choice-item">
-                  <input id="type-audit" name="project_type" type="radio" value="accessibility-audit">
-                  <label for="type-audit">Accessibility audit</label>
+                  <input id="type-audit" name="project_type" type="radio" value="student-project">
+                  <label for="type-audit">Student project</label>
                 </div>
                 <div class="choice-item">
                   <input id="type-build" name="project_type" type="radio" value="frontend-build">
                   <label for="type-build">Front-end build</label>
                 </div>
                 <div class="choice-item">
-                  <input id="type-system" name="project_type" type="radio" value="design-system">
-                  <label for="type-system">Design system</label>
+                  <input id="type-system" name="project_type" type="radio" value="internship-opportunity">
+                  <label for="type-system">Internship opportunity</label>
                 </div>
               </div>
             </fieldset>
@@ -102,7 +111,7 @@
             <div class="form-field">
               <label for="message">Project details <span aria-hidden="true">*</span></label>
               <textarea id="message" name="message" rows="7" minlength="20" required aria-describedby="message-hint"></textarea>
-              <p id="message-hint" class="field-hint">Include goals, audience, known accessibility concerns, and important dates.</p>
+              <p id="message-hint" class="field-hint">Include goals, project context, internship details, or important dates.</p>
             </div>
 
             <div class="choice-item consent">
@@ -118,8 +127,8 @@
           <aside class="contact-aside" aria-labelledby="contact-details-title">
             <h2 id="contact-details-title">Contact details</h2>
             <address>
-              <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
-              <p>Location: Remote, available worldwide</p>
+              <p>Email: To be provided later</p>
+              <p>Location: Anantapur, Andhra Pradesh, India</p>
             </address>
             <p>Typical response time is two business days.</p>
           </aside>
