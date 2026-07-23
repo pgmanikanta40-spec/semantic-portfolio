@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://pgmanikanta40-spec.github.io/thiranex/sitemap.xml
